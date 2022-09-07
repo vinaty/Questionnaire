@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>CTSA - questionnaire de satisfaction</title>
+</head>
+
+<body>
+    <img src="./assets/logo_ctsa_res.png">
+    <h1>Questionnaire de satisfaction</h1>
+    <form action="./fonctio.php" method="post" class="form-example">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div>
+                            <p>Les champs "Nom" et "Ville" sont obligatoire.</p>
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom">
+                        </div>
+                        <div>
+                            <label for="rue">Rue</label>
+                            <input type="text" id="rue" name="rue">
+                            <label for="ville">Ville</label>
+                            <input type="text" id="ville" name="ville" required>
+                        </div>
+                        <div>
+                            <label for="tel">Téléphone</label>
+                            <input type="tel" id="tel" name="tel" minlength="10" maxlength="10" size="10">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="mail">
+                        </div>
+                    </fieldset>
+                    <div>
+                        <fieldset>
+                            <input type="radio" id="CTSA50" name="ctsa" value="CTSA50">
+                            <label for="CTSA50">CTSA Sinistres 50 </label>
+                            <input type="radio" id="CTSAMA" name="ctsa" value="CTSAMA">
+                            <label for="CTSAMA">CTSA Sinistres Maine Anjou</label>
+                            <input type="radio" id="CTSA35" name="ctsa" value="CTSA35">
+                            <label for="CTSA35">CTSA Sinistres 35</label>
+                            <input type="radio" id="REAS" name="ctsa" value="REAS">
+                            <label for="REAS">REAS CTSA Sinistres</label>
+                            <input type="radio" id="CTSACENTRE" name="ctsa" value="CTSACENTRE">
+                            <label for="CTSACENTRE">CTSA Sinistres Centre</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <p>Lorsque vous avez été contacté par l'entreprise CTSA Sinistres, avez-vous été clairement informé du déroulement ultérieur des opérations ?</p>
+                            <input type="radio" id="😄" name="info" value="😄">
+                            <label for="😄">😄</label>
+                            <input type="radio" id="😊" name="info" value="😊">
+                            <label for="😊">😊</label>
+                            <input type="radio" id="😐" name="info" value="😐">
+                            <label for="😐">😐</label>
+                            <input type="radio" id="😖" name="info" value="😖">
+                            <label for="😖">😖</label>
+                            <label for="commentaireInformation">Commentaire :</label>
+                            <textarea name="commentaireInformation">
+                        </textarea>
+                        </fieldset>
+                    </div>
+                    <p>Comment qualifiez-vous la qualité du contact avec l'entreprise CTSA Sinistres ?</p>
+                    <div>
+                        <fieldset>
+                            <p>Décontamination et sauvegarde :</p>
+                            <input type="radio" id="😄" name="déconta" value="😄">
+                            <label for="😄">😄</label>
+                            <input type="radio" id="😊" name="déconta" value="😊">
+                            <label for="😊">😊</label>
+                            <input type="radio" id="😐" name="déconta" value="😐">
+                            <label for="😐">😐</label>
+                            <input type="radio" id="😖" name="déconta" value="😖">
+                            <label for="😖">😖</label>
+                            <label for="commentaireDéconta">Commentaire :</label>
+                            <textarea name="commentaireDéconta">
+                        </textarea>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <p>Embellissement :</p>
+                            <input type="radio" id="😄" name="Embellissement" value="😄">
+                            <label for="😄">😄</label>
+                            <input type="radio" id="😊" name="Embellissement" value="😊">
+                            <label for="😊">😊</label>
+                            <input type="radio" id="😐" name="Embellissement" value="😐">
+                            <label for="😐">😐</label>
+                            <input type="radio" id="😖" name="Embellissement" value="😖">
+                            <label for="😖">😖</label>
+                            <label for="commentaireEmbellissement">Commentaire :</label>
+                            <textarea name="commmentaireEmbellissement">
+                        </textarea>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <p>Comment qualifiez-vous les délais d’intervention de l'entreprise CTSA Sinistres ?</p>
+                            <input type="radio" id="😄" name="délais" value="😄">
+                            <label for="😄">😄</label>
+                            <input type="radio" id="😊" name="délais" value="😊">
+                            <label for="😊">😊</label>
+                            <input type="radio" id="😐" name="délais" value="😐">
+                            <label for="😐">😐</label>
+                            <input type="radio" id="😖" name="délais" value="😖">
+                            <label for="😖">😖</label>
+                            <label for="commentaireDélais">Commentaire :</label>
+                            <textarea name="commentaireDélais">
+                        </textarea>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <p>Lors d’un prochain sinistre, seriez-vous encore favorable à l’intervention de CTSA Sinistres ?
+                            </p>
+                            <input type="radio" id="😄" name="favorable" value="😄">
+                            <label for="😄">😄</label>
+                            <input type="radio" id="😊" name="favorable" value="😊">
+                            <label for="😊">😊</label>
+                            <input type="radio" id="😐" name="favorable" value="😐">
+                            <label for="😐">😐</label>
+                            <input type="radio" id="😖" name="favorable" value="😖">
+                            <label for="😖">😖</label>
+                            <label for="commentaireFavorable">Commentaire :</label>
+                            <textarea name="commentaireFavorable">
+                        </textarea>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <label for="lieu">Fait à</label>
+                            <input type="text" id="lieu" name="lieu">
+                            <label for="date">Le :</label>
+                            <input type="date" id="date" name="date">
+                        </fieldset>
+                    </div>
+                    <div class="spacer">
+                        <input type="submit" value="Passer à la signature" class="myButton">
+                    </div>
+    </form>
+    </div>
+</body>
+
+</html>
